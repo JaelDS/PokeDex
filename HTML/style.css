@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Cairo', sans-serif;
+}
+
+:root{
+    --dex:#CE1131;
+    --ballback:#FAFBFC;
+    --ballblue:#009DD4;
+    --ballblue1:#0BCDFF;
+    --miniball:#9CE8FF;
+    --ballred:#DE0806;
+    --ballred1:#9A0404;
+    --ballred2:#E03E41;
+    --ballyellow:#E1E514;
+    --ballyellow1:#80840B;
+    --ballyellow2:#C9C92A;
+    --square:#6a6a72;
+    --square1:#DEDEDE;
+    --square2:#F1F2D3;
+    --screen:#032D29;
+}
+
+.main{
+    width: 950px;
+    top:0;
+    margin-left: 12%;
+}
+
+body{
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+.dex{
+    display: grid;
+    grid-template-rows:repeat(2,1fr);
+    padding-bottom: 25%;
+}
+
+.display{
+    max-width: 100%;
+    background-color:var(--dex);
+    -webkit-box-shadow: inset 1px 0px 5px 7px #810a1e;
+    -moz-box-shadow: inset 1px 0px 5px 7px rgba(129,10,30,1);
+    box-shadow: inset 1px 0px 5px 7px rgba(129,10,30,1);
+    border-radius:20px 20px 0px 0px;
+}
+
+.top{
+    display: grid;
+    grid-template-columns:repeat(8,1fr);
+}
+
+.focus{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 15%;
+}
+
+.data{
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+}
+
+.ball{
+    max-width: 80px;
+    height: 80px;
+    background-color:var(--ballback);
+    border-radius: 100%;
+    margin-left: 20%;
+    margin-top: 8%;
+    padding: 1%;
+}
+
+.ball1{
+    max-width: 70px;
+    height: 70px;
+    background-color:var(--ballblue);
+    border-radius: 100%;
+    margin-left: 7%;
+}
+
+.ball2{
+    max-width: 28px;
+    height: 28px;
+    background-color:var(--ballblue1);
+    border-radius: 100%;
+    margin-left: 12%;
+    padding: 20%;
+}
+
+.ball3{
+    max-width: 12px;
+    height: 12px;
+    background-color:var(--miniball);
+    border-radius: 100%;
+    margin-left: 20%;
+}
+
+.ballred{
+    max-width: 15px;
+    height: 15px;
+    background-color:var(--ballred);
+    border-radius: 100%;
+    margin-top: 10%;
+    padding: 2%;
+}
+
+.ballred1{
+    max-width: 14px;
+    height: 14px;
+    background-color:var(--ballred1);
+    border-radius: 100%;
+    padding:5%;
+}
+
+.ballred2{
+    max-width: 10px;
+    height: 10px;
+    background-color:var(--ballred);
+    border-radius: 100%;
+    margin-top: 10%;
+    padding:2%;
+}
+
+.ballred3{
+    max-width: 5px;
+    height: 5px;
+    background-color:var(--ballred2);
+    border-radius: 100%;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.ballyellow{
+    max-width: 15px;
+    height: 15px;
+    background-color:var(--ballyellow);
+    border-radius: 100%;
+    margin-top: 10%;
+    padding: 2%;
+}
+
+.ballyellow1{
+    max-width: 14px;
+    height: 14px;
+    background-color:var(--ballyellow1);
+    border-radius: 100%;
+    padding:5%;
+}
+
+.ballyellow2{
+    max-width: 10px;
+    height: 10px;
+    background-color:var(--ballyellow);
+    border-radius: 100%;
+    margin-top: 10%;
+    padding:2%;
+}
+
+.ballyellow3{
+    max-width: 5px;
+    height: 5px;
+    background-color:var(--ballyellow2);
+    border-radius: 100%;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.display1{
+    max-width: 100%;
+    height: 50%;
+    background-color:var(--dex);
+    position: relative;
+    margin-top: 15%;
+    border-radius: 20px 0px 0px 20px;
+    border-style: inset;
+    border-color: rgba(29, 1, 1, 0.534);
+    border-width: 1rem;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    grid-column: 7/8;
+    border-collapse: collapse;
+}
+
+img[name="pokeLogo"]{
+    width: 150px;
+    position: absolute;
+    z-index: 1;
+    margin-top: -5%;
+    margin-left: 15%;
+}
+
+.display2{
+    max-width: 100%;
+    height: 50%;
+    background-color:var(--dex);
+    position: relative;
+    margin-top: 15%;
+    border-radius: 0px 20px 20px 0px;
+    border-style: inset;
+    border-color: rgba(29, 1, 1, 0.534);
+    border-width: 1rem;
+    border-left: 0;
+    border-bottom-width: 0;
+    margin-right: 15%;
+
+}
+
+.square{
+    width: 150px; 
+    height: 150px; 
+    background: var(--square);
+    position:absolute;
+    margin-left: 8%;
+    margin-top: 1%;
+    padding: 3.7%;
+    padding-right: 3.8%;
+    border-radius: 8px;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 100% 80%, 100% 100%, 30% 100%, 0% 70%, 0% 20%)
+}
+
+.square1{
+    width: 150px; 
+     height: 150px; 
+     background: var(--square1);
+     position:relative;
+    padding: 29%;
+    border-radius: 8px;
+    top:-47px;
+    margin-left: -25%;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 100% 80%, 100% 100%, 30% 100%, 0% 70%, 0% 20%)
+}
+
+.square2{
+    width: 150px; 
+     height: 110px; 
+     background: var(--square2);
+     position:relative;
+    margin-left: -10%;
+    margin-top: -2%;
+    padding: 10%;
+    border-radius: 8px;
+    clip-path: polygon(5% 0, 100% 0%, 100% 100%, 100% 80%, 100% 100%, 5% 100%, 0% 95%, 0% 5%);
+    z-index: 1;
+}
+
+.screen{
+    width: 40%; 
+    height: 25%; 
+    background: var(--screen);
+    position:absolute;
+    margin-left: -7%;
+    margin-top: 1%;
+    border-radius: 8px;
+}
+
+.canvas {
+    width: 450px;
+    height: fit-content;
+    margin-left: -20%;
+    margin-top: -7%;
+    position: absolute;
+}
+
+.ability{
+    width: fit-content;
+    margin-top: -8%;
+    column-count: 1;
+    column-fill:balance;
+    font-size: 0.8rem;
+    padding-left: 38%;
+    color:#cbeef7;
+    line-height: 1.2rem;
+    text-transform: capitalize;
+}
+
+.up{
+    text-decoration: none;
+    color: var(--ballyellow)
+}
+
+.up1{
+    width: 55%;
+    margin-top: 10%;
+    position: absolute;
+}
+
+button{
+    background-color: #FFCC01;
+    border-width: 0.3rem;
+    border-color: rgb(56, 91, 168);
+    border-style:outset;
+    color:rgb(56, 91, 168);
+    text-shadow: rgb(141, 129, 129) 2px 2px 2px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all ease 400ms;
+    border-radius: 8px;
+}
+
+input[type=text]{
+    text-align: center;
+    color: var(--ballyellow);
+    background-color: var(--screen);
+    border: none;
+    border-radius: 5px;
+}
+
+button:active{
+    transform: translateY(2px);
+    border-width: 0.4rem;
+    border-color: rgb(56, 91, 168);
+    border-style:inset;
+
+}
+
+.moves_{
+    width: 97.8%;
+    height: 300px;
+    margin-top: -8%;
+    margin-left: -19%;
+    padding:2%;
+    overflow-x:scroll;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 5px;
+    column-count: 4;
+    column-gap: 2.7rem;
+    column-width: auto;
+    column-rule: 0.5px solid var(--ballyellow);
+    font-size: 0.8rem;
+    background-color: var(--screen);
+    text-transform: capitalize;
+    color:#cbeef7;
+    text-shadow: rgb(56, 91, 168) 1px 2px 1px;
+    position: static;
+}
+
+.space{
+    text-transform:uppercase;
+    margin-left: 12%;
+    padding-left:3%;
+    padding-right: 3%;
+    color:#e9f2f5;
+    font-weight: bold;
+    line-height: 2rem;
+    font-size: 0.8rem;
+    text-shadow: rgb(0, 0, 0) 1px 0 6px;
+}
+
+.space1{
+    text-transform:uppercase;
+    padding-left:3%;
+    padding-right: 3%;
+    margin-left: 2%;
+    color:#e9f2f5;
+    font-weight: bold;
+    line-height: 2rem;
+    font-size: 0.8rem;
+    text-shadow: rgb(0, 0, 0) 1px 0 6px;
+}
+
+span[name="physics"]{
+    padding-left: 20%;
+    color:#cbeef7;
+    font-size: 0.8rem;
+    line-height: 2rem;
+}
+
+
+.textscreen{
+    margin-top: 2%;
+    margin-left: 4%;
+    font-size: 0.7rem;
+    color: var(--ballyellow)
+}
+
+.search{
+    margin-top: 60%;
+    margin-left: 18%;
+}
+
+.img{
+    display: flex;
+    max-width: 40%;
+    max-height: 55%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 7%;
+    position:absolute;
+    object-fit:fill;
+}
+
+.format{
+    display: flex;
+    max-width: 240px;
+    max-height: 240px;
+    align-items: center;
+    justify-content: center;
+    margin-top: -35%;
+    margin-left: -40%;
+    position:absolute;
+    object-fit:fill;
+}
+
+.div{
+    width: 60%;
+    height: 80%;
+    align-content: center;
+    justify-content: center;
+    object-position: center;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+
+.datos{
+    padding-left: 10%;
+    color:#666666;
+    text-shadow: 0px -1px 0px #000000;
+    font-weight: bold;
+}
+
+.datos1{
+    padding-left: 17%;
+    color:#666666;
+    text-shadow: 0px -1px 0px #000000;
+    font-weight: bold;
+}
+
+.datos2{
+    color:rgb(56, 91, 168);
+    font-weight: bold;
+}
+
+.datos3{
+    margin-left: 2%;
+    margin-top: 2%;
+    color:rgb(56, 91, 168);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    position: absolute;
+}
+
+
+

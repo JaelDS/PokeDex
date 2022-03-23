@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokedex LaunchX</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    </head>
+<body>
+    <header></header>
+    <section class="main">
+        <div class="display">
+            <div class="top">
+                <div class="ball">
+                    <div class="ball1">
+                        <div class="ball2">
+                            <div class="ball3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="focus">
+                    <div class="ballred">
+                        <div class="ballred1">
+                            <div class="ballred2">
+                                <div class="ballred3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ballyellow">
+                        <div class="ballyellow1">
+                            <div class="ballyellow2">
+                                <div class="ballyellow3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ballyellow">
+                        <div class="ballyellow1">
+                            <div class="ballyellow2">
+                                <div class="ballyellow3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div ></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div>
+                    <div class="display1"><img src="pokemon_img.svg" alt="Pokemon" name="pokeLogo"></div>
+                </div>
+                <div>
+                    <div class="display2"></div>
+                </div>
+            </div>
+            <div class="data">
+                <div>
+                    <div class="square">
+                        <div class="square1">
+                            <div class="square2">
+                                <div class="div" id="image">
+                                    <img class="img" src="pokebola.png" alt="Pokemon" id="pokeImg" name="pokeImg">
+                                </div>
+                            </div>
+                            <div class="datos" id="pokemonShow">id: <span id="pokemonID" class="datos2"></span></div>
+                            <div class="datos1" id="pokemonShows">name: <span id="pokemonNombre" class="datos3"></span></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="search">
+                            <input type="text" placeholder="Search Pokemon" id="pokeName" name="pokeName">
+                            <button onclick="fetchPokemon()">Search <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </svg></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dex">
+                    <div class="dex">
+                        <div>
+                            <div class="screen">
+                                <div class="textscreen">
+                                    <div>TYPE: <span id="habilidad1" class="space"></span><span id="habilidad2" class="space1"></span></div>
+                                    <div class="data">
+                                        <div>
+                                            <div>HEIGHT: <span id="height" name="physics"></span></div>
+                                            <div>WEIGHT: <span id="weight" name="physics"></span></div>
+                                            <div>ABILITIES: <div id="abilitie" class="ability"></div></div>
+                                            <div class="up1"><a href="#" id="show" class="up" onclick="myFunction()">MOVES: <span name="physics" id="countMoves"></span></a></div>
+                                        </div>
+                                        <div>
+                                            <div class="canvas">
+                                                <canvas id="stats"></canvas>
+                                                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+                                                <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.6.0"></script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div id="moves" class="moves_" style="display:none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<footer>
+    <script src="dex.js"></script>
+</footer>
+</html>
